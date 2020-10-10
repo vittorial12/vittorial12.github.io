@@ -1,0 +1,33 @@
+
+body {
+  font-family: helvetica;
+}
+  
+ul {
+  font-family: monospace;
+}
+
+#date {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+   
+#aboutme {
+  margin-top: 100%;
+  padding-bottom: 20%;
+} 
+
+#resume {
+  margin-top: 100%;
+  padding-bottom: 20%;
+} 
+
+#contact {
+  margin-top: 100%;
+  padding-bottom: 20%;
+} 

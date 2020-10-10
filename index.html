@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body>
+
+<!-- Navbar -->
+<nav class="w3-bar w3-black">
+    <a href="#home" class="w3-button w3-bar-item">Home</a>
+    <a href="#aboutme" class="w3-button w3-bar-item">About Me</a>
+    <a href="#resume" class="w3-button w3-bar-item">Resume</a>
+    <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+    <p id="date" style="text-align:right;"></p>
+    <script type="text/javascript" src="app.js"></script>
+</nav>
+
+<!-- Image Slideshow -->
+<section>
+    <img class="myImages" src="images/chicago1.jpg" width="2000" height="751">
+    <img class="myImages" src="images/chicago2.jpg" width="2000" height="751">
+    <img class="myImages" src="images/ocean.jpg" width="2000" height="751">
+</section>
+
+<script>
+    var myIndex = 0;
+    slideShow();
+    
+    function slideShow() {
+      var i;
+      var x = document.getElementsByClassName("myImages");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(slideShow, 4000); // slide show every 4 seconds
+    }
+</script>
+
+<!-- About Me Page -->
+<div id="aboutme"> 
+    <section class="w3-container w3-center">
+        <h2 class="w3-wide">ABOUT ME</h2>
+        <p class="w3-opacity"><i>Name: Vittoria Laudando</i></p>
+        <p class="w3-row-padding w3-justify w3-center">
+            <img src="images/myImage.jpg"style="width:25%">
+        </p>
+    </section>
+</div>
+
+<section class="w3-container w3-content w3-center" style="max-width:600px">
+    <p class="w3-justify">
+        Hello and welcome! My name is Vittoria and I am currently a Senior at The University of Illinois at Chicago.
+        I am currently the Treasurer of <b>WICS</b> at UIC, which stands for Women In Computer Science and a student mentor
+        for <b>Girls Who Code</b>! WICS is an all inclusive club who aim to bring women in computer science together while 
+        also empowering and supporting all students in Computer Science. Girls Who Code aims is also an all inclusive 
+        club who aims to support and increase the number of women in computer science by targeting high school students
+        allowing them to become better familiarized with computer science. Some hobbies I enjoy to do in my free time are 
+        swimming, painting, playing tennis, baking, and playing video games. I am also a very talkative person and always 
+        enjoy meeting new people and I have two adorable Egyptian Mau kittens :)
+
+    <p class="w3-justify w3-center">
+        Read more about <b>WICS</b> here: <a href="https://wics.students.uic.edu/">
+            <img alt="Qries" src="images/wicsicon.jpg"
+            width="70" height="70">
+        </a>
+    <p class="w3-justify w3-center">
+        Read more about <b>GWC</b> here: <a href="https://girlswhocode.com/">
+            <img src="images/gwcicon.jpg"
+            width="70" height="70">
+        </a>
+</section>
+
+<!-- Resume Page -->
+<div id="resume"> 
+    <section class="w3-container w3-center w3-light-grey">
+        <h2 class="w3-wide">RESUME</h2>
+        <p class="w3-opacity"><i>Click the link below to view my resume:</i></p>
+        <p class="w3-container w3-content w3-justify w3-center" style="max-width:600px">
+            <a href="resume.pdf">resume :)</a>
+        </p>  
+    </section>
+</div>
+
+<!-- Contact Page -->
+<div id="contact"> 
+    <section class="w3-container w3-center">
+        <h2 class="w3-wide">CONTACT</h2>
+        <p class="w3-opacity"><i>Any questions, contact me below!</i></p>
+        <p class="w3-container w3-content w3-justify w3-center" style="max-width:600px">
+            <a href="mailto:laudandovittoria@gmail.com">EMAIL</a>
+        </p>
+        <p class="w3-container w3-content w3-justify w3-center" style="max-width:600px">
+            <a href="https://github.com/vittorial12">GITHUB</a>
+        </p>  
+        <p class="w3-container w3-content w3-justify w3-center" style="max-width:600px">
+            <a href="https://www.linkedin.com/in/vittoria-laudando-90800115b/">LINKEDIN</a>
+        </p>
+    </section>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+    <a href="https://github.com/vittorial12"><i class="fa fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/vittoria-laudando-90800115b/"><i class="fa fa-linkedin"></i></a>
+    <a href="tel:+6302901508"><i class="fa fa-phone"></i></a>
+    <a href="mailto:laudandovittoria@gmail.com"><i class="fa fa-envelope"></i></a>
+</footer>
+
+</body>
+</html>
